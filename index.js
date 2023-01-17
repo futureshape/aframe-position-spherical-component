@@ -40,8 +40,8 @@ AFRAME.registerComponent('position-spherical', {
   setPosition: function() {
     var spherical = new THREE.Spherical(
       this.data.radius,
-      THREE.Math.degToRad(this.data.phi),
-      THREE.Math.degToRad(this.data.theta)
+      THREE.MathUtils.degToRad(this.data.phi),
+      THREE.MathUtils.degToRad(this.data.theta)
     );
     var vector = new THREE.Vector3();
 
